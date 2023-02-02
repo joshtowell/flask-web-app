@@ -1,0 +1,12 @@
+{
+    "joshua": {
+        "name": "Joshua",
+        "age": 21,
+        "url": "https://joshuatowell.tech/"
+    },
+    "mikey": {
+        "name": "Mikey",
+        "age": 20,
+        "instrument": "trombone"
+    }
+}
