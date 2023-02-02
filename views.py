@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, jsonify
+from flask import Blueprint, render_template, request, jsonify, redirect, url_for
 import json
 
 views = Blueprint(__name__, "views")
@@ -38,3 +38,8 @@ def readJson(filename):
     data = json.load(file)
     file.close()
     return data
+
+# Example: http://127.0.0.1:8000/old-page
+@views.route("/old-page")
+def redirectHome():
+    return redirect(url_for("views.home"))
