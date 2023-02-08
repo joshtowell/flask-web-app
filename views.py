@@ -20,7 +20,7 @@ def projects():
     category = args.get('category')
     return render_template("projects.html", category = category)
 
-# Example: http://127.0.0.1:8000/json?user=Joshua
+# Example: http://127.0.0.1:8000/json?user=joshua
 @views.route("/json")
 def getJson():
     args = request.args
